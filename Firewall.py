@@ -24,7 +24,7 @@ if uploaded_file is not None:
         st.error("❌ The uploaded file must be larger than 1 GB.")
     else:
         try:
-            df = pd.read_csv(uploaded_file)
+            df = pd.read_csv(r"own.csv")
 
             st.subheader("📊 Raw Data Preview")
             st.write(df.head())
